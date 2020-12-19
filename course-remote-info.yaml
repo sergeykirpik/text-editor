@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/203023/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 17 Dec 2020 19:15:50 UTC
+update_date: Sat, 19 Dec 2020 08:27:43 UTC
 stages:
 - id: 201
   step: 5258
@@ -16,7 +16,7 @@ stages:
   is_completed: true
 - id: 204
   step: 5261
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Units of information
@@ -250,5 +250,5 @@ topics:
     theory_id: 3610
   - title: Thread synchronization
     theory_id: 3557
-  - title: Multithreading in SWING
+  - title: Multithreading in Swing
     theory_id: 11299

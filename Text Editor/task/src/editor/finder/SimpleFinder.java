@@ -2,40 +2,36 @@ package editor.finder;
 
 public class SimpleFinder implements Finder {
 
-    private int fromIndex;
-    private String what;
-    private String where;
+    private int start;
+    private int end;
 
-    public boolean startSearch(String what, String where) {
-        this.what = what;
-        this.where = where;
-        fromIndex = where.indexOf(what);
-        return fromIndex != -1;
-    }
-
+    @Override
     public int start() {
-        return fromIndex;
+        return start;
     }
 
+    @Override
     public int end() {
-        return fromIndex + what.length();
+        return end;
     }
 
-    public boolean next() {
-        fromIndex += what.length();
-        if (fromIndex >= where.length()) {
-            fromIndex = 0;
+    @Override
+    public boolean searchFromPosition(int pos, String what, String where) {
+        if (what == null || where == null) {
+            return false;
         }
-        fromIndex = where.indexOf(what, fromIndex);
-        return fromIndex != -1;
+        start = where.indexOf(what, pos);
+        end = start + what.length();
+        return start != -1;
     }
 
-    public boolean prev() {
-        fromIndex -= what.length();
-        if (fromIndex < 0) {
-            fromIndex = where.length();
+    @Override
+    public boolean searchFromPositionBackwards(int pos, String what, String where) {
+        if (what == null || where == null) {
+            return false;
         }
-        fromIndex = where.lastIndexOf(what, fromIndex);
-        return fromIndex != -1;
+        start = where.lastIndexOf(what, pos);
+        end = start + what.length();
+        return start != -1;
     }
 }

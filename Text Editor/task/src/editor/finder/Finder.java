@@ -1,9 +1,8 @@
 package editor.finder;
 
 public interface Finder {
-    boolean startSearch(String what, String where);
+    boolean searchFromPosition(int pos, String what, String where);
+    boolean searchFromPositionBackwards(int pos, String what, String where);
     int start();
     int end();
-    boolean next();
-    boolean prev();
 }

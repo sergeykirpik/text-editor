@@ -885,12 +885,48 @@ files:
 - name: src/editor/finder/Finder.java
   visible: true
   learner_created: true
+- name: src/resources/img/.DS_Store
+  visible: true
+  learner_created: true
+- name: src/resources/.DS_Store
+  visible: true
+  learner_created: true
+- name: src/resources/img/search.png
+  visible: true
+  learner_created: true
+- name: src/resources/img/open.png
+  visible: true
+  learner_created: true
+- name: src/resources/img/save.png
+  visible: true
+  learner_created: true
+- name: src/resources/img/previous.png
+  visible: true
+  learner_created: true
+- name: src/resources/img/next.png
+  visible: true
+  learner_created: true
+- name: src/editor/action/StartSearchAction.java
+  visible: true
+  learner_created: true
+- name: src/editor/action/PreviousMatchAction.java
+  visible: true
+  learner_created: true
+- name: src/editor/action/TextEditorAction.java
+  visible: true
+  learner_created: true
+- name: src/editor/action/NextMatchAction.java
+  visible: true
+  learner_created: true
+- name: src/editor/action/SaveFileAction.java
+  visible: true
+  learner_created: true
+- name: src/editor/action/OpenFileAction.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/38/stages/204/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #58
-
-    MenuUseRegExp does&#39;t work
-  time: Wed, 16 Dec 2020 22:32:00 UTC
+  message: Congratulations!
+  time: Sat, 19 Dec 2020 10:43:44 UTC
 record: -1
